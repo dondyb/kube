@@ -1,5 +1,4 @@
 This is a Sass version, forked from https://github.com/imperavi/kube
----------------------------------------------------------------------------------------------------
 
 Kube CSS-Framework
 ====

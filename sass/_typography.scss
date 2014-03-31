@@ -1,17 +1,17 @@
 /* =Typography
 -----------------------------------------------------------------------------*/
 body {
-	background: @backgroundBody;
-	color: @colorBody;
-	font-size: @baseFontSize + 0px;
-	line-height: @baseLineInEms;
-	font-family: @baseFontFamily;
+	background: unquote($backgroundBody);
+	color: $colorBody;
+	font-size: $baseFontSize + 0px;
+	line-height: $baseLineInEms;
+	font-family: $baseFontFamily;
 }
 a {
-	color: @colorLink;
+	color: $colorLink;
 	&:focus,
 	&:hover {
-		color: @colorLinkHover;
+		color: $colorLinkHover;
 	}
 }
 .title,
@@ -21,40 +21,40 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: @headingsFontFamily;
+	font-family: $headingsFontFamily;
 	font-weight: bold;
-	color: @colorHeadings;
+	color: $colorHeadings;
 	text-rendering: optimizeLegibility;
 }
 h1 {
-	font-size: @h1FontSize;
+	font-size: $h1FontSize;
 	line-height: 1.111em;
 	margin-bottom: .25em;
 }
 h2 {
-	font-size: @h2FontSize;
+	font-size: $h2FontSize;
 	line-height: 1.111em;
 	margin-bottom: .5em;
 }
 h3 {
-	font-size: @h3FontSize;
+	font-size: $h3FontSize;
 	line-height: 1.333em;
 	margin-bottom: .5em;
 }
 h4 {
-	font-size: @h4FontSize;
+	font-size: $h4FontSize;
 	line-height: 1.5em;
 	margin-bottom: .333em;
 }
 h5 {
-	font-size: @h5FontSize;
-	line-height: @baseLineInEms;
+	font-size: $h5FontSize;
+	line-height: $baseLineInEms;
 	margin-bottom: .25em;
 }
 h6 {
-	font-size: @h6FontSize;
+	font-size: $h6FontSize;
 	text-transform: uppercase;
-	line-height: @baseLineInEms;
+	line-height: $baseLineInEms;
 	margin-bottom: .25em;
 }
 
@@ -75,25 +75,25 @@ h5.subheading {
 	font-weight: 300;
 }
 h1.subheading {
-	font-size: @h1SubheadingFontSize;
+	font-size: $h1SubheadingFontSize;
 }
 h2.subheading {
-	font-size: @h2SubheadingFontSize;
+	font-size: $h2SubheadingFontSize;
 }
 h3.subheading {
-	font-size: @h3SubheadingFontSize;
+	font-size: $h3SubheadingFontSize;
 }
 h4.subheading {
-	font-size: @h4SubheadingFontSize;
+	font-size: $h4SubheadingFontSize;
 }
 h5.subheading {
-	font-size: @h5SubheadingFontSize;
+	font-size: $h5SubheadingFontSize;
 }
 
 /* =Lead
 -----------------------------------------------------------------------------*/
 .lead {
-	font-size: @leadFontSize;
+	font-size: $leadFontSize;
 	font-weight: 300;
 	line-height: 1.4em;
 	margin-bottom: .75em;
@@ -107,7 +107,7 @@ dt,
 blockquote,
 td,
 th {
-	line-height: @baseLineInEms;
+	line-height: $baseLineInEms;
 }
 ul,
 ol,
@@ -115,7 +115,7 @@ ul ul,
 ol ol,
 ul ol,
 ol ul {
-	margin: 0 0 0 @baseLineInEms;
+	margin: 0 0 0 $baseLineInEms;
 }
 ol ol li {
 	list-style-type: lower-alpha;
@@ -135,7 +135,7 @@ form,
 fieldset,
 figure,
 address {
-	margin-bottom: @baseLineInEms;
+	margin-bottom: $baseLineInEms;
 }
 address {
 	font-style: normal;
@@ -147,10 +147,10 @@ dd {
 	margin-left: 1em;
 }
 blockquote {
-	font-size: @quoteFontSize;
+	font-size: $quoteFontSize;
 	font-style: italic;
 	position: relative;
-	padding-left: @baseLineInEms;
+	padding-left: $baseLineInEms;
 	margin-left: 0;
 	border-left: 2px solid #dbdada;
 	& p {
@@ -164,7 +164,7 @@ cite {
 }
 small,
 blockquote cite {
-	font-size: @smallFontSize;
+	font-size: $smallFontSize;
 	line-height: 1;
 }
 del {
@@ -185,7 +185,7 @@ i {
 }
 sub,
 sup {
-	font-size: @superSmallFontSize;
+	font-size: $superSmallFontSize;
 	line-height: 0;
 	position: relative;
 }
@@ -196,13 +196,13 @@ sub {
 	bottom: -0.25em;
 }
 figcaption {
-	font-size: @smallFontSize;
+	font-size: $smallFontSize;
 	font-style: italic;
 }
 ins,
 mark {
-	background-color: @colorYellow;
-	color: @colorBlack;
+	background-color: $colorYellow;
+	color: $colorBlack;
 	text-decoration: none;
 }
 pre,
@@ -210,14 +210,14 @@ code,
 kbd,
 samp {
 	font-size: 90%;
-	font-family: @codeFontFamily;
+	font-family: $codeFontFamily;
 }
 pre {
 	font-size: 90%;
 	line-height: 1.45em;
-	color: @colorBody;
+	color: $colorBody;
 	background: #f6f6f6;
-	padding: @baseLineInEms;
+	padding: $baseLineInEms;
 	overflow: auto;
 }
 code {
@@ -232,7 +232,7 @@ pre code {
 	border: none;
 	padding: 0;
 	background: none;
-	line-height: @baseLineInEms;
+	line-height: $baseLineInEms;
 }
 kbd {
 	padding: 2px 6px 1px 6px;
@@ -242,7 +242,7 @@ kbd {
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px white inset;
 	background-color: #fafafa;
 	border: 1px solid #ccc;
-	color: @colorBody;
+	color: $colorBody;
 	font-weight: normal;
 	white-space: nowrap;
 }
@@ -263,9 +263,9 @@ input[type="search"],
 input[type="datetime-local"],
 textarea,
 select[multiple="multiple"] {
-	font-family: @controlsFontFamily;
+	font-family: $controlsFontFamily;
 	line-height: 1;
-	font-size: @baseFontSize + 0px;
+	font-size: $baseFontSize + 0px;
 	border-radius: 0;
 	background: #fff;
 	box-shadow: none;
@@ -298,8 +298,8 @@ textarea {
 	line-height: 1.35em;
 }
 fieldset {
-	padding: @baseLineInEms;
-	margin-bottom: @baseLineInEms;
+	padding: $baseLineInEms;
+	margin-bottom: $baseLineInEms;
 	border: 1px solid #dbdada;
 }
 legend {
@@ -320,5 +320,5 @@ table caption {
 	text-transform: uppercase;
 	padding: 0 1em;
 	color: #777;
-	font-size: @smallFontSize;
+	font-size: $smallFontSize;
 }

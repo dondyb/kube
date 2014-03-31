@@ -4,15 +4,15 @@
 	display: inline-block;
 	vertical-align: top;
 
-	font-family: @controlsFontFamily;
-	font-size: @baseFontSize + 0px;
+	font-family: $controlsFontFamily;
+	font-size: $baseFontSize + 0px;
 	font-weight: 400;
 
 	line-height: 1;
 
     text-align: center;
 	text-decoration: none;
-	color: @colorBody;
+	color: $colorBody;
 
 	margin: 0;
 	border: none;
@@ -34,7 +34,7 @@ input[type="submit"].btn {
 	-webkit-appearance: none;
 }
 .btn-small {
-	font-size: @buttonsSmallFontSize;
+	font-size: $buttonsSmallFontSize;
 	padding: 7px 16px;
 }
 .btn-outline {
@@ -70,22 +70,22 @@ input[type="submit"].btn {
 	}
 }
 .btn-blue {
-	background: @colorBlue;
-	&:hover { background: darken(@colorBlue, 10%); }
+	background: $colorBlue;
+	&:hover { background: darken($colorBlue, 10%); }
 }
 .btn-red {
-	background: @colorRed;
-	&:hover { background: darken(@colorRed, 10%); }
+	background: $colorRed;
+	&:hover { background: darken($colorRed, 10%); }
 }
 .btn-green {
-	background: @colorGreen;
-	&:hover { background: darken(@colorGreen, 10%); }
+	background: $colorGreen;
+	&:hover { background: darken($colorGreen, 10%); }
 }
 .btn-yellow {
-	background: @colorYellow;
+	background: $colorYellow;
 	color: #000;
 	&:hover {
-		background: darken(@colorYellow, 17%);
+		background: darken($colorYellow, 17%);
 	}
 }
 .btn-black {
@@ -146,22 +146,22 @@ input[type="submit"].btn {
 .btn-blue.btn-active,
 .btn-blue.btn-disabled,
 .btn-blue[disabled] {
-	background: darken(@colorBlue, 10%);
+	background: darken($colorBlue, 10%);
 }
 .btn-red.btn-active,
 .btn-red.btn-disabled,
 .btn-red[disabled] {
-	background: darken(@colorRed, 10%);
+	background: darken($colorRed, 10%);
 }
 .btn-green.btn-active,
 .btn-green.btn-disabled,
 .btn-green[disabled] {
-	background: darken(@colorGreen, 10%);
+	background: darken($colorGreen, 10%);
 }
 .btn-yellow.btn-active,
 .btn-yellow.btn-disabled,
 .btn-yellow[disabled] {
-	background: darken(@colorYellow, 17%);
+	background: darken($colorYellow, 17%);
 }
 .btn-black.btn-active,
 .btn-black.btn-disabled,
